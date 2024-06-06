@@ -1,3 +1,4 @@
+//import io from standard library
 use std::io::{stdin, stdout, Write};
 fn read(input: &mut String) {
     stdout().flush()
@@ -8,9 +9,9 @@ fn read(input: &mut String) {
 fn main() {
     println!("Welcome to CLI Calculator!");
     loop {
-        let mut num1 = String::new();
-        let mut num2 = String::new();
-        let mut operator = String::new();
+        let mut num1: String = String::new();
+        let mut num2: String = String::new();
+        let mut operator: String = String::new();
         
         print!("What is your first number?: ");
         read(&mut num1);
